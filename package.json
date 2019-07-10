@@ -29,7 +29,8 @@
     "node-uuid": "^1.4.7",
     "process": "^0.11.2",
     "yeoman-generator": "^0.19.0",
-    "yosay": "^1.0.2"
+    "yosay": "^1.0.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "mocha": "*",
@@ -39,6 +40,9 @@
   },
   "scripts": {
     "test": "node_modules/.bin/mocha test/*.js",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags"
-  }
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
