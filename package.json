@@ -30,7 +30,7 @@
     "process": "^0.11.2",
     "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2",
-    "snyk": "^1.189.0"
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "mocha": "*",
